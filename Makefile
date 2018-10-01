@@ -1,7 +1,7 @@
 SHELL := /bin/sh
 
 CC      ?= clang
-CFLAGS  += -O2 -std=c99 -Wall -Wextra -I$(PREFIX)/include
+CFLAGS  += -O2 -std=c99 -Wall -Wextra -Werror -I$(PREFIX)/include
 CFLAGS  += -D_POSIX_C_SOURCE=200112L
 LDFLAGS += -L$(PREFIX)/lib
 
