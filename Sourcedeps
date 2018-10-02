@@ -1,4 +1,5 @@
 when : when.c
 pseudo : pseudo.c
 charge : charge.c
-spr : spr.c
+hash : LIBS = -lcrypto
+hash : hash.c
