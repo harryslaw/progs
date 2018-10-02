@@ -57,12 +57,12 @@ main(int argc, char **argv)
     }
   }
 
-  char real_path[256] = { 0 };
-  snprintf(real_path, sizeof(real_path), path, index);
-
   if ((setlocale(LC_ALL, "C")) == NULL) {
     perror("setlocale");
   }
+
+  char real_path[256] = { 0 };
+  snprintf(real_path, sizeof(real_path), path, index);
 
   if (stay) {
     while (battery_output(real_path, format) == 0) {
