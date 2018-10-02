@@ -1,4 +1,4 @@
 when : when.c
-array : array.c
+pseudo : pseudo.c
 charge : charge.c
-chcp : chcp.c
+spr : spr.c
