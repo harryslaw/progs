@@ -3,3 +3,4 @@ pseudo : pseudo.c
 charge : charge.c
 hash : LIBS = -lcrypto
 hash : hash.c
+test test.c
